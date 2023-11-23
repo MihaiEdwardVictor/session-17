@@ -1,16 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
-    
+
+    <style>
+        .styledButton {
+            background-color: coral;
+            border-radius: 20px;
+            box-shadow: 2px 2px 2px 1px rgba(0, 0, 255, .2);
+            border: none;
+            padding: 15px 15px 15px 15px;
+            color: aliceblue;
+            font-weight: 400;
+        }
+
+        button {
+            margin-top: 100px;
+
+        }
+
+        form {
+            margin-top: 100px;
+        }
+    </style>
+
     <h1>Session 17 - DOM</h1>
 
 
+    <form id="myForm">
+        <p id="textToChange">This Be Thy Text</p>
+        <button type="submit">Submit</button>
+    </form>
 
-<script src="scripts.js"></script>
+
+    <div id="parentOfButton">
+        <button id="delButton">This button dissapeares when double clicked</button>
+    </div>
+
+    <button id="myButton">This is a button</button>
+
+    <script src="scripts.js"></script>
 </body>
+
 </html>
